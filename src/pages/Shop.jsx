@@ -1,7 +1,9 @@
+import { Hero } from "../components"
+
 export const Shop = () => {
     return (
         <div>
-            <h1>Shop</h1>
+            <Hero />
         </div>
     )
 }
