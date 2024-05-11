@@ -1,4 +1,5 @@
 export { Hero } from '../components/hero/Hero'
 export { Item } from '../components/item/Item'
 export { Navbar } from '../components/navbar/Navbar'
+export { Offers } from '../components/offers/Offers'
 export { Popular } from '../components/popular/Popular'
