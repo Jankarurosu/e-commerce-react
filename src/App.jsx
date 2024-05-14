@@ -1,4 +1,4 @@
-import { Navbar } from "./components/navbar/Navbar"
+import { Footer, Navbar } from "./components"
 import { RouterApp } from "./router/RouterApp"
 
 export const App = () => {
@@ -6,6 +6,7 @@ export const App = () => {
     <div>
       <Navbar />
       <RouterApp />
+      <Footer />
     </div>
   )
 }

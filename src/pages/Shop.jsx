@@ -1,4 +1,4 @@
-import { Footer, Hero, NewCollections, Newsletter, Offers, Popular } from "../components"
+import { Hero, NewCollections, Newsletter, Offers, Popular } from "../components"
 
 export const Shop = () => {
     return (
@@ -8,7 +8,6 @@ export const Shop = () => {
             <Offers />
             <NewCollections />
             <Newsletter />
-            <Footer />
         </div>
     )
 }
