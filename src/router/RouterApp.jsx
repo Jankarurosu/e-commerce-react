@@ -1,5 +1,5 @@
 import { Navigate, Route, Routes } from "react-router-dom"
-import { Cart, LoginSingup, Product, Shop, ShopCategory } from "../pages"
+import { Cart, LoginSignup, Product, Shop, ShopCategory } from "../pages"
 import men_banner from '../components/assets/banner_mens.png'
 import women_banner from '../components/assets/banner_women.png'
 import kid_banner from '../components/assets/banner_kids.png'
@@ -15,7 +15,7 @@ export const RouterApp = () => {
                 <Route path=':productId' element={<Product />} />
             </Route>
             <Route path='/cart' element={<Cart />} />
-            <Route path='/login' element={<LoginSingup />} />
+            <Route path='/login' element={<LoginSignup />} />
 
             <Route path='/*' element={<Navigate to={'/'} />} />
         </Routes>
