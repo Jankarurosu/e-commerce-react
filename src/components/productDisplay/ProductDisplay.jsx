@@ -31,16 +31,16 @@ export const ProductDisplay = (props) => {
                     <img src={star_dull_icon} alt="" />
                     <p>(122)</p>
                 </div>
-                <div className="producdisplay-right-prices">
-                    <div className="productdisplay-price-old"><s>${product.old_price}</s></div>
-                    <div className="productdisplay-price-new">${product.new_price}</div>
+                <div className="productdisplay-right-prices">
+                    <div className="productdisplay-right-price-old">${product.old_price}</div>
+                    <div className="productdisplay-right-price-new">${product.new_price}</div>
                 </div>
                 <div className="productdisplay-right-description">
-                    Lorem ipsum dolor sit amet consectetur adipiscing elit tortor aliquet, primis a quis montes sodales fames nulla pulvinar, tellus eleifend eu phasellus auctor dictum augue est. Eros sapien facilisis vivamus tellus aenean integer ligula velit donec metus penatibus ac quisque in accumsan, nulla magna bibendum nisi volutpat quam varius congue nascetur feugiat parturient mattis diam.
+                    Lorem ipsum dolor sit amet consectetur adipiscing elit tortor aliquet, primis a quis montes sodales fames nulla pulvinar, tellus eleifend eu phasellus auctor dictum augue est.
                 </div>
                 <div className="productdisplay-right-size">
                     <h1>Select Size</h1>
-                    <div className="productdisplay-right-size">
+                    <div className="productdisplay-right-sizes">
                         <div>S</div>
                         <div>M</div>
                         <div>L</div>
