@@ -1,4 +1,5 @@
 export { Breadcrum } from '../components/breadcrums/Breadcrum'
+export { CartItems } from '../components/cartItems/CartItems'
 export { DescriptionBox } from '../components/descriptionBox/DescriptionBox'
 export { Footer } from '../components/footer/Footer'
 export { Hero } from '../components/hero/Hero'
