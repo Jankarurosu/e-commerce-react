@@ -1,31 +1,23 @@
-Hero.jsx
+import './Popular.css'
 
-import './Hero.css'
+import data_product from '../assets/data'
+import { Item } from '../item/Item'
 
-import hand_icon from '../assets/hand_icon.png'
-import arrow_icon from '../assets/arrow.png'
-import hero_image from '../assets/hero_image.png'
-
-export const Hero = () => {
+export const Popular = () => {
     return (
-        <div className="hero">
-            <div className='hero-left'>
-                <h2>NEW ARRIVALS ONLY</h2>
-                <div>
-                    <div className="hero-hand-icon">
-                        <p>new</p>
-                        <img src={hand_icon} alt="hand_icon" />
-                    </div>
-                    <p>collections</p>
-                    <p>for everyone</p>
-                </div>
-                <div className='hero-latest-btn'>
-                    <div>Latest Collection</div>
-                    <img src={arrow_icon} alt="arrow_icon" />
-                </div>
-            </div>
-            <div className='hero-right'>
-                <img src={hero_image} alt="hero_image" />
+        <div className="popular">
+            <h1>POPULAR IN WOMEN</h1>
+            <hr />
+            <div className="popular-item">
+                {data_product.map((item, i) => {
+                    return <Item
+                        key={i}
+                        id={item.id}
+                        name={item.name}
+                        image={item.image}
+                        new_price={item.new_price}
+                        old_price={item.old_price} />
+                })}
             </div>
         </div>
     )
@@ -34,66 +26,31 @@ export const Hero = () => {
 
 Hero.css
 
-.hero {
-    height: 100vh;
-    background: linear-gradient(180deg, #fde1ff, #e1ffea22 60%);
+.popular {
     display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
     margin-bottom: 100px;
 }
 
-.hero-left {
-    flex: 1;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    gap: 20px;
-    padding-left: 180px;
-    line-height: 1.1;
-}
-
-.hero-left h2 {
-    color: #090909;
-    font-size: 26px;
+.popular h1 {
+    color: #171717;
+    font-size: 50px;
     font-weight: 600;
 }
 
-.hero-left p {
-    color: #171717;
-    font-size: 100px;
-    font-weight: 700;
+.popular hr {
+    width: 200px;
+    height: 5px;
+    border-radius: 10px;
+    background: #252525;
 }
 
-.hero-hand-icon {
+.popular-item {
+    margin-top: 50px;
     display: flex;
-    align-items: center;
-    gap: 20px;
-}
-
-.hero-hand-icon img {
-    width: 105px;
-}
-
-.hero-latest-btn {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 15px;
-    width: 310px;
-    height: 70px;
-    border-radius: 75px;
-    margin-top: 30px;
-    background: #ff4141;
-    color: white;
-    font-size: 20px;
-    font-weight: 500;
-    cursor: pointer;
-}
-
-.hero-right {
-    flex: 1;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    gap: 30px;
 }
 
 Actua como un programador de front end profesional y eficiente, y quiero que completes la siguiente tarea, tomando en cuenta la estructura del HTML y del CSS, realiza el codigo para el modo responsive de este componente Hero para que se adapte a varios tipos de pantallas y manteniendo como prioridad una buena experiencia de usuario esto quiere decir que todo tiene que mantener un orden al entrar al modo responsive.
