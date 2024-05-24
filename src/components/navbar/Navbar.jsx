@@ -27,15 +27,16 @@ export const Navbar = () => {
                 <li onClick={() => { setMenu("womens"); toggleMobileMenu(); }}><Link style={{ textDecoration: 'none', color: 'black' }} to={'/womens'}>Women</Link> {menu === "womens" ? <hr></hr> : <></>}</li>
                 <li onClick={() => { setMenu("kids"); toggleMobileMenu(); }}><Link style={{ textDecoration: 'none', color: 'black' }} to={'/kids'}>Kids</Link> {menu === "kids" ? <hr></hr> : <></>}</li>
             </div>
-            <div className='nav-login-cart'>
-                <Link to={'/login'}><button>Login</button></Link>
-                <Link to={'/cart'}><img src={cart_icon} alt="cart_icon" /></Link>
-                <div className='nav-cart-count'>{getTotalCartItems()}</div>
-            </div>
+
             <div className='nav-hamburger' onClick={toggleMobileMenu}>
                 <div className='line'></div>
                 <div className='line'></div>
                 <div className='line'></div>
+            </div>
+            <div className='nav-login-cart'>
+                <Link to={'/login'}><button>Login</button></Link>
+                <Link to={'/cart'}><img src={cart_icon} alt="cart_icon" /></Link>
+                <div className='nav-cart-count'>{getTotalCartItems()}</div>
             </div>
         </div>
     )

@@ -96,6 +96,7 @@
 }
 
 @media (max-width: 960px) {
+
     .nav-menu {
         display: none;
         flex-direction: column;
@@ -113,18 +114,15 @@
         display: flex;
     }
 
-    .nav-login-cart {
-        display: none;
-    }
-
     .nav-hamburger {
         display: flex;
     }
 }
 
 @media (max-width: 480px) {
+
     .nav-logo p {
-        font-size: 24px;
+        font-size: 25px;
     }
 
     .nav-login-cart button {
