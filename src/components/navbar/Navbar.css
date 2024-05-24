@@ -1,6 +1,7 @@
 .navbar {
     display: flex;
     justify-content: space-around;
+    align-items: center;
     padding: 15px;
     box-shadow: 0 1px 3px -2px black;
 }
@@ -25,6 +26,7 @@
     color: #626262;
     font-size: 20px;
     font-weight: 500;
+    margin: 0;
 }
 
 .nav-menu li {
@@ -46,17 +48,17 @@
 .nav-login-cart {
     display: flex;
     align-items: center;
-    gap: 50px;
+    gap: 20px;
 }
 
 .nav-login-cart button {
-    width: 155px;
-    height: 60px;
+    width: 100px;
+    height: 40px;
     outline: none;
     border: 1px solid #7a7a7a;
-    border-radius: 75px;
+    border-radius: 20px;
     color: #515151;
-    font-size: 20px;
+    font-size: 16px;
     font-weight: 500;
     background: white;
     cursor: pointer;
@@ -67,15 +69,67 @@
 }
 
 .nav-cart-count {
-    width: 25px;
-    height: 25px;
+    width: 20px;
+    height: 20px;
     display: flex;
     justify-content: center;
     align-items: center;
     margin-top: -35px;
-    margin-left: -55px;
-    border-radius: 15px;
-    font-size: 15px;
+    margin-left: -30px;
+    border-radius: 50%;
+    font-size: 14px;
     background: red;
     color: white;
+}
+
+.nav-hamburger {
+    display: none;
+    flex-direction: column;
+    gap: 5px;
+    cursor: pointer;
+}
+
+.nav-hamburger .line {
+    width: 25px;
+    height: 3px;
+    background-color: #333;
+}
+
+@media (max-width: 960px) {
+    .nav-menu {
+        display: none;
+        flex-direction: column;
+        position: absolute;
+        top: 95px;
+        right: 0;
+        background-color: white;
+        width: 100%;
+        padding: 25px;
+        text-align: center;
+        box-shadow: 0 1px 5px rgba(0, 0, 0, 0.3);
+    }
+
+    .nav-menu.open {
+        display: flex;
+    }
+
+    .nav-login-cart {
+        display: none;
+    }
+
+    .nav-hamburger {
+        display: flex;
+    }
+}
+
+@media (max-width: 480px) {
+    .nav-logo p {
+        font-size: 24px;
+    }
+
+    .nav-login-cart button {
+        width: 80px;
+        height: 35px;
+        font-size: 14px;
+    }
 }
