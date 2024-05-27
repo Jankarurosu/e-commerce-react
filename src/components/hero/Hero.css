@@ -2,6 +2,7 @@
     height: 100vh;
     background: linear-gradient(180deg, #fde1ff, #e1ffea22 60%);
     display: flex;
+    margin-bottom: 100px;
     flex-direction: row;
 }
 
@@ -123,10 +124,6 @@
         width: 240px;
         height: 60px;
         font-size: 17px;
-    }
-
-    .hero-right {
-        margin-top: 20px;
     }
 
     .hero-right img {
