@@ -4,12 +4,14 @@
     align-items: center;
     gap: 15px;
     margin-bottom: 100px;
+    padding: 0 20px;
 }
 
 .new-collections h1 {
     color: #171717;
     font-size: 50px;
     font-weight: 600;
+    text-align: center;
 }
 
 .new-collections hr {
@@ -20,8 +22,35 @@
 }
 
 .collections {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
     margin-top: 50px;
     gap: 30px;
+}
+
+@media (max-width: 1200px) {
+    .new-collections h1 {
+        font-size: 40px;
+    }
+}
+
+@media (max-width: 768px) {
+    .collections {
+        gap: 20px;
+    }
+
+    .new-collections h1 {
+        font-size: 35px;
+    }
+}
+
+@media (max-width: 480px) {
+    .new-collections h1 {
+        font-size: 30px;
+    }
+
+    .collections {
+        gap: 10px;
+    }
 }
