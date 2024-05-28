@@ -9,19 +9,20 @@
     padding: 0px 140px;
     margin-bottom: 150px;
     background: linear-gradient(180deg, #fde1ff 0%, #e1ffea22 60%);
-    gap: 30px;
+    gap: 10px;
 }
 
 .newsletter h1 {
     color: #454545;
-    font-size: 55px;
-    font-weight: 600;
+    font-size: 50px;
+    font-weight: 700;
 
 }
 
 .newsletter p {
     color: #454545;
-    font-size: 20px;
+    font-size: 18px;
+    font-weight: 600;
 }
 
 .newsletter div {
@@ -33,10 +34,11 @@
     height: 70px;
     border-radius: 80px;
     border: 1px solid #e3e3e3;
+    margin-top: 20px;
 }
 
 .newsletter input {
-    width: 500px;
+    width: 450px;
     margin-left: 30px;
     border: none;
     outline: none;

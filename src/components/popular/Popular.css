@@ -9,14 +9,14 @@
 
 .popular h1 {
     color: #171717;
-    font-size: 50px;
+    font-size: 45px;
     font-weight: 600;
     text-align: center;
 }
 
 .popular hr {
     width: 200px;
-    height: 5px;
+    height: 4px;
     border-radius: 10px;
     background: #252525;
 }
@@ -33,15 +33,20 @@
     .popular h1 {
         font-size: 40px;
     }
-}
 
-@media (max-width: 768px) {
     .popular-item {
         gap: 20px;
     }
+}
+
+@media (max-width: 768px) {
 
     .popular h1 {
         font-size: 35px;
+    }
+
+    .popular-item {
+        gap: 15px;
     }
 }
 

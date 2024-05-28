@@ -1,6 +1,6 @@
 .item {
     width: 100%;
-    max-width: 350px;
+    max-width: 285px;
     margin-bottom: 30px;
 }
 
@@ -34,4 +34,24 @@
 .item:hover {
     transform: scale(1.05);
     transition: 0.6s;
+}
+
+@media (max-width: 675px) {
+    .item {
+        max-width: 48%;
+    }
+}
+
+@media (max-width: 450px) {
+    .item p {
+        font-size: 14px;
+    }
+
+    .item-price-new {
+        font-size: 15px;
+    }
+
+    .item-price-old {
+        font-size: 15px;
+    }
 }
