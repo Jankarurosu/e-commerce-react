@@ -1,163 +1,237 @@
-Hero.jsx
+Newsletter.jsx
 
-import './Offers.css'
+import './Newsletter.css'
 
-import exclusive_image from '../assets/exclusive_image.png'
-
-export const Offers = () => {
+export const Newsletter = () => {
     return (
-        <div className='offers'>
-            <div className="offers-left">
-                <h1>Exclusive</h1>
-                <h1>Offers For You</h1>
-                <p>ONLY ON BEST SELLERS PRODUCTS</p>
-                <button>Check Now</button>
+        <div className='newsletter'>
+            <h1>Get Exclusive Offers On Your Email</h1>
+            <p>Subscribe to opur newletter and stay updated</p>
+            <div>
+                <input type="email" placeholder='Your Email id' />
+                <button>Subscribe</button>
             </div>
-            <div className="offers-right">
-                <img src={exclusive_image} alt="exclusive_image" />
-            </div>
-
         </div>
     )
 }
 
-Hero.css
+Newsletter.css
 
-.hero {
-    height: 100vh;
-    background: linear-gradient(180deg, #fde1ff, #e1ffea22 60%);
-    display: flex;
-    margin-bottom: 100px;
-    flex-direction: row;
-}
-
-.hero-left {
-    flex: 1;
+.newsletter {
+    width: 65%;
+    height: 40vh;
     display: flex;
     flex-direction: column;
+    align-items: center;
     justify-content: center;
-    gap: 20px;
-    padding-left: 180px;
-    line-height: 1.1;
+    text-align: center;
+    margin: auto;
+    padding: 0px 140px;
+    margin-bottom: 150px;
+    background: linear-gradient(180deg, #fde1ff 0%, #e1ffea22 60%);
+    gap: 10px;
 }
 
-.hero-left h2 {
-    color: #090909;
-    font-size: 25px;
-    font-weight: 600;
-}
-
-.hero-left p {
-    color: #171717;
-    font-size: 90px;
+.newsletter h1 {
+    color: #454545;
+    font-size: 50px;
     font-weight: 700;
 }
 
-.hero-hand-icon {
-    display: flex;
-    align-items: center;
-    gap: 20px;
-}
-
-.hero-hand-icon img {
-    width: 100px;
-}
-
-.hero-latest-btn {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 15px;
-    width: 300px;
-    height: 65px;
-    border-radius: 75px;
-    margin-top: 30px;
-    background: #ff4141;
-    color: white;
+.newsletter p {
+    color: #454545;
     font-size: 18px;
-    font-weight: 500;
-    cursor: pointer;
+    font-weight: 600;
 }
 
-.hero-right {
-    flex: 1;
+.newsletter div {
     display: flex;
     align-items: center;
-    justify-content: center;
-}
-
-.hero-right img {
+    justify-content: space-between;
+    background: white;
     width: 100%;
-    max-width: 525px;
+    max-width: 730px;
+    height: 70px;
+    border-radius: 80px;
+    border: 1px solid #e3e3e3;
+    margin-top: 20px;
 }
 
-@media (max-width: 1340px) {
-
-    .hero-left {
-        padding-left: 100px;
-    }
-
-    .hero-left h2 {
-        font-size: 25px;
-    }
-
-    .hero-left p {
-        font-size: 80px;
-    }
-
-    .hero-hand-icon img {
-        width: 85px;
-    }
-
-    .hero-latest-btn {
-        width: 260px;
-        height: 60px;
-        font-size: 18px;
-    }
-
-    .hero-right {
-        padding-top: 20px;
-    }
+.newsletter input {
+    width: 100%;
+    max-width: 450px;
+    margin-left: 30px;
+    border: none;
+    outline: none;
+    color: #616161;
+    font-family: Poppins;
+    font-size: 15px;
 }
 
-@media (max-width: 1050px) {
-    .hero {
-        height: 150vh;
-        flex-direction: column;
-        padding: 50px;
-        align-items: center;
-        text-align: center;
-    }
+.newsletter div button {
+    width: 210px;
+    height: 70px;
+    border-radius: 80px;
+    background: black;
+    color: white;
+    font-size: 15px;
+    cursor: pointer;
 
-    .hero-left {
-        padding-left: 0;
-        align-items: center;
-    }
-
-    .hero-left h2 {
-        font-size: 30px;
-    }
-
-    .hero-left p {
-        font-size: 70px;
-    }
-
-    .hero-hand-icon {
-        justify-content: center;
-    }
-
-    .hero-hand-icon img {
-        width: 75px;
-    }
-
-    .hero-latest-btn {
-        width: 240px;
-        height: 60px;
-        font-size: 17px;
-    }
 }
-Actua como un programador de front end profesional y eficiente, y quiero que completes la siguiente tarea, tomando en cuenta la estructura del HTML y del CSS, realiza el codigo para el modo responsive de este componente Offers para que se adapte a varios tipos de pantallas y manteniendo como prioridad una buena experiencia de usuario esto quiere decir que todo tiene que mantener un orden al entrar al modo responsive.
+
+Actua como un programador de front end profesional y eficiente, y quiero que completes la siguiente tarea, tomando en cuenta la estructura del HTML y del CSS, realiza el codigo para el modo responsive de este componente Newsletter para que se adapte a varios tipos de pantallas y manteniendo como prioridad una buena experiencia de usuario esto quiere decir que todo tiene que mantener un orden al entrar al modo responsive.
 
 Especificacmente lo que se requiere para un buen diseño responsive es lo siguiente:
 
-1. Que las letras y la imagen disminuyan su tamaño progresivamente para que se adapte a todo tipo de pantalla
+1. Qudisminuyan su tamaño progresivamente para que se adapte a todo tipo de pantalla
+
+.newsletter {
+    width: 65%;
+    height: 40vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    margin: auto;
+    padding: 0px 140px;
+    margin-bottom: 150px;
+    background: linear-gradient(180deg, #fde1ff 0%, #e1ffea22 60%);
+    gap: 10px;
+}
+
+.newsletter h1 {
+    color: #454545;
+    font-size: 50px;
+    font-weight: 700;
+}
+
+.newsletter p {
+    color: #454545;
+    font-size: 18px;
+    font-weight: 600;
+}
+
+.newsletter div {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: white;
+    width: 100%;
+    max-width: 730px;
+    height: 70px;
+    border-radius: 80px;
+    border: 1px solid #e3e3e3;
+    margin-top: 20px;
+}
+
+.newsletter input {
+    width: 100%;
+    max-width: 450px;
+    margin-left: 30px;
+    border: none;
+    outline: none;
+    color: #616161;
+    font-family: Poppins;
+    font-size: 15px;
+}
+
+.newsletter div button {
+    width: 210px;
+    height: 70px;
+    border-radius: 80px;
+    background: black;
+    color: white;
+    font-size: 15px;
+    cursor: pointer;
+}
+
+/* Responsive Styles */
+@media (max-width: 1024px) {
+    .newsletter {
+        width: 75%;
+        padding: 0px 70px;
+    }
+
+    .newsletter h1 {
+        font-size: 40px;
+    }
+
+    .newsletter p {
+        font-size: 16px;
+    }
+
+    .newsletter div {
+        height: 60px;
+    }
+
+    .newsletter input {
+        font-size: 14px;
+    }
+
+    .newsletter div button {
+        width: 180px;
+        height: 60px;
+    }
+}
+
+@media (max-width: 768px) {
+    .newsletter {
+        width: 85%;
+        padding: 0px 50px;
+    }
+
+    .newsletter h1 {
+        font-size: 35px;
+    }
+
+    .newsletter p {
+        font-size: 14px;
+    }
+
+    .newsletter div {
+        flex-direction: column;
+        height: auto;
+        padding: 10px;
+    }
+
+    .newsletter input {
+        width: 100%;
+        max-width: none;
+        margin: 0 0 10px 0;
+    }
+
+    .newsletter div button {
+        width: 100%;
+        height: 50px;
+        margin-top: 10px;
+    }
+}
+
+@media (max-width: 480px) {
+    .newsletter {
+        width: 95%;
+        padding: 0px 20px;
+    }
+
+    .newsletter h1 {
+        font-size: 28px;
+    }
+
+    .newsletter p {
+        font-size: 12px;
+    }
+
+    .newsletter div {
+        height: auto;
+        padding: 10px;
+    }
+
+    .newsletter input {
+        font-size: 12px;
+    }
+
+    .newsletter div button {
+        font-size: 12px;
+    }
+}
