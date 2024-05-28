@@ -87,3 +87,9 @@
         font-size: 20px;
     }
 }
+
+@media (max-width: 500px) {
+    .offers-right img {
+        width: 350px;
+    }
+}
