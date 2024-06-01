@@ -14,14 +14,14 @@
 }
 
 .newsletter h1 {
-    color: #454545;
+    color: #171717;
     font-size: 55px;
     font-weight: 600;
 
 }
 
 .newsletter p {
-    color: #454545;
+    color: #171717;
     font-size: 20px;
 }
 
@@ -150,13 +150,13 @@
 
 @media (max-width:500px) {
     .newsletter {
-        padding: 0 50px;
+        padding: 25px 50px;
         margin-bottom: 70px;
         height: 50vh;
     }
 
     .newsletter h1 {
-        font-size: 30px;
+        font-size: 35px;
     }
 
     .newsletter p {
