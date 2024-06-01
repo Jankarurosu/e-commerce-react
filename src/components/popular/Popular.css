@@ -4,7 +4,6 @@
     align-items: center;
     gap: 10px;
     height: 90vh;
-    margin-bottom: 50px;
 }
 
 .popular h1 {
@@ -88,7 +87,6 @@
 @media (max-width: 500px) {
     .popular {
         height: 100vh;
-        margin-bottom: 25px;
     }
 
     .popular-item {
